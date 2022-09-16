@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Contact from '../components/Contact';
 import ProjectSection from '../components/ProjectSection';
+import '../assets/h-a-cv-22.pdf';
 // import ToggleSwitch from './ToggleSwitch';
 
 const Home = () => {
@@ -48,7 +49,7 @@ const Home = () => {
             Github
           </a>
           <a href="/blog">Blog Posts</a>
-          <a href="../../assets/h-a-cv-22.pdf" target="_blank">
+          <a href={require('../assets/h-a-cv-22.pdf')} target="_blank">
             Download my CV
           </a>
         </div>
