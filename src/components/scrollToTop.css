@@ -1,0 +1,26 @@
+:root {
+  --background-color: #01002a;
+  --primary-color: #fed700;
+}
+.scroll-top .none {
+  opacity: 0;
+  visibility: hidden;
+}
+.scroll-top a {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: grey;
+  opacity: 0.75;
+  padding: 1rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+}
+.scroll-icon {
+  color: black;
+  font-size: 1.3rem;
+}
