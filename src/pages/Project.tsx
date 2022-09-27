@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import ProjectData from '../data/projects.json'
 
 const Project = ({ }) => {
@@ -9,13 +9,14 @@ const Project = ({ }) => {
   return (
     <body>
       <div id="container--main">
-        <a href="/">&#x2190; Go Back</a>
+        <Link to="/">&#x2190; Go Back</Link>
 
         <h1>{project.title}</h1>
 
         <ul>
-          <li><a href={project.demoLink} target="_blank" rel="noreferrer">Live Demo</a></li>
-          <li><a href={project.codeLink} target="_blank" rel="noreferrer">Source code</a></li>
+          {/* <li><a href={project.demoLink} target="_blank" rel="noreferrer">Live Demo</a></li> */}
+          <li><Link to={project.demoLink} target="_blank" rel="noreferrer">Live Demo</Link></li>
+          <li><Link to={project.codeLink} target="_blank" rel="noreferrer">Source code</Link></li>
         </ul>
         <p>{project.paragraph1}</p>
 
@@ -33,8 +34,10 @@ const Project = ({ }) => {
         <section className="section--page">
 
           <div id="socials--list">
-            <a href={`/project/${project.id - 1}`} className={project.id - 1 <= 0 ? 'disabled' : ''}>Previous</a>
-            <a href={`/project/${project.id + 1}`} className={project.id + 1 > ProjectData.length ? 'disabled' : ''}>Next</a>
+            {/* <a href={`/project/${project.id - 1}`} className={project.id - 1 <= 0 ? 'disabled' : ''}>Previous</a>
+            <a href={`/project/${project.id + 1}`} className={project.id + 1 > ProjectData.length ? 'disabled' : ''}>Next</a> */}
+            <Link to={`/project/${project.id - 1}`} className={project.id - 1 <= 0 ? 'disabled' : ''}>Previous</Link>
+            <Link to={`/project/${project.id + 1}`} className={project.id + 1 > ProjectData.length ? 'disabled' : ''}>Next</Link>
           </div>
         </section>
 
