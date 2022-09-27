@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Contact from '../components/Contact';
 import ProjectSection from '../components/ProjectSection';
 // import ToggleSwitch from './ToggleSwitch';
@@ -23,6 +24,7 @@ const Home = () => {
         <div id="socials--list">
           {/* <a href="https://youtube.com/c/dennisivy" target="_blank">Youtube</a> */}
           <a href="#my-work" >My Projects</a>
+          <Link to="blog" >Blog Feed</Link>
           <a href="https://www.linkedin.com/in/h-archer/" target="_blank">Linkedin</a>
           <a href="https://github.com/hermionearcher" target="_blank">Github</a>
           <a href="../../assets/h-a-cv-22.pdf" target="_blank">Download my CV</a>
