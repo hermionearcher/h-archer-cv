@@ -16,16 +16,13 @@
   --mainLinkColor: var(--mainLinkColor-dark);
   --mainBorderColor: var(--mainBorderColor-dark);
   --mainBgColor: var(--mainBgColor-dark);
-
 }
-
 
 * {
   font-family: 'Readex Pro';
   line-height: 1.5em;
   box-sizing: border-box;
   color: var(--mainTextColor);
-
 }
 
 body {
@@ -116,8 +113,6 @@ a {
   font-size: 0.9em;
 }
 
-
-
 #qualifications--list {
   list-style: none;
 }
@@ -159,7 +154,6 @@ a {
 
 .card--project a:hover {
   color: rgb(30, 190, 214);
-
 }
 
 .card--work-history {
@@ -178,7 +172,6 @@ a {
   height: 1px;
 }
 
-
 /* Toggle switch for theme switcher */
 .toggle-switch {
   position: relative;
@@ -187,7 +180,7 @@ a {
   height: 25px;
 }
 
-.toggle-switch input[type="checkbox"] {
+.toggle-switch input[type='checkbox'] {
   display: none;
 }
 
@@ -205,7 +198,7 @@ a {
 
 .toggle-switch .switch::before {
   position: absolute;
-  content: "";
+  content: '';
   left: 2px;
   top: 2px;
   width: 21px;
@@ -215,12 +208,12 @@ a {
   transition: transform 0.3s ease;
 }
 
-.toggle-switch input[type="checkbox"]:checked+.switch::before {
+.toggle-switch input[type='checkbox']:checked + .switch::before {
   transform: translateX(25px);
   background-color: #6699cc;
 }
 
-.toggle-switch input[type="checkbox"]:checked+.switch {
+.toggle-switch input[type='checkbox']:checked + .switch {
   background-color: #336699;
 }
 
@@ -240,17 +233,19 @@ a {
 .contact--container span {
   padding: 20px 0 20px 0;
 }
-input, textarea {
+input,
+textarea {
   background-color: var(--mainBgColor);
   border: none;
-  border-bottom: 1px solid var(--secondaryTextColor);;
+  border-bottom: 1px solid var(--secondaryTextColor);
   margin: 10px 0 10px 0;
   transition: 0.3s;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
-.btn{
+.btn {
   background-color: var(--mainBgColor);
   color: var(--secondaryTextColor);
 }
@@ -260,31 +255,29 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 
-
-@media(max-width:600px) {
-
+@media (max-width: 600px) {
   .section--page {
-      padding-top: 1em;
-      padding-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   #wrapper--hero {
-      display: flex;
-      align-items: center;
-      gap: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
   }
 
   #profile-pic {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
   }
 
   #wrapper--hero {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .card--work-history {
-      border-left: none;
-      padding-left: 0;
+    border-left: none;
+    padding-left: 0;
   }
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Contact from '../components/Contact';
 import ProjectSection from '../components/ProjectSection';
-import ScrollToTop from '../components/ScrollToTop';
 import '../assets/h-a-cv-22.pdf';
 // import ToggleSwitch from './ToggleSwitch';
 
@@ -213,7 +212,6 @@ const Home = () => {
       <ToggleSwitch /> */}
 
       <Contact />
-      <ScrollToTop />
     </div>
   );
 };
