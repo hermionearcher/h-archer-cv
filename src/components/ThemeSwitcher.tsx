@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './ThemeSwitcher.css';
 
 export default function () {
   let theme = true;
 
-  const [visible, setVisible] = useState(false);
   const onClick = () => {
     theme = !theme;
-    theme ? setVisible(true) : setVisible(false);
 
     if (theme) {
       document.documentElement.style.setProperty(
