@@ -5,6 +5,7 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 import Project from './pages/Project';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
+import Error from './pages/Error';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path=":id" element={<Project />} />
           </Route>
           <Route path="blog" element={<Blog />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
       <ScrollToTop />
