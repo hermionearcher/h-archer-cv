@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Toggle from 'react-toggle';
 import './ThemeSwitcher.css';
 
 export default function () {
@@ -53,8 +52,14 @@ export default function () {
         'var(--mainBgColor-dark)'
       );
     }
-
-    console.log(visible);
   };
-  return <></>;
+  return (
+    <>
+      <div id="wrapper--techstack__items">
+        <div className="card--techstack" onClick={onClick}>
+          <span>Theme Switcher</span>
+        </div>
+      </div>
+    </>
+  );
 }
