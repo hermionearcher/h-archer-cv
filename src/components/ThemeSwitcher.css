@@ -3,6 +3,11 @@
   color: gray;
 }
 .light {
-  background-color: #white;
+  background-color: white;
   color: gray;
+}
+
+#themeSwitcherBtn {
+    cursor: pointer;
+    border: none;
 }

@@ -1,7 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './ThemeSwitcher.css';
+import { IoIosPartlySunny } from "react-icons/io";
 
-export default function () {
+
+export default function ThemeSwitcher() {
   let theme = true;
 
   const onClick = () => {
@@ -51,11 +53,12 @@ export default function () {
       );
     }
   };
+
   return (
     <>
       <div id="wrapper--techstack__items">
-        <div className="card--techstack" onClick={onClick}>
-          <span>Theme Switcher</span>
+        <div className="card--techstack" id="themeSwitcherBtn" onClick={onClick}>
+          <IoIosPartlySunny size={25}/>
         </div>
       </div>
     </>
