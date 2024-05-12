@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+      "name": "ATOS",
+      "link": "https://atos.net/en/",
+    "role": "POWERAPPS DEVELOPER",
+    "description": "",
+    "startDate": "09/20",
+    "endDate": "09/21",
+    "list": ["Built canvas web applications in Power Apps, with SQL Server Management, REST APIs, Power Automate and Power BI", "Create my own UI based on requirements from user stories and develop those into a web application.", "Regularly present and demonstrate back to the client.","Developed company wide documentation on applying GDS standard in Power Apps development."]
+  },
+  {
+    "id": 2,
+      "name": "ATOS",
+      "link": "https://atos.net/en/",
+    "role": "ANGULAR DEVELOPER",
+    "description": "",
+    "startDate": "09/21",
+    "endDate": "05/22",
+    "list": ["Develop web applications in Angular using the Government Design System (GDS) and WCAG 2.1 AA standard", "Communicate with backend services using HttpClient in Angular (API calls).", "Manual unit testing of code.", "Reading and understanding JSON schema for effective data handling.", "Manage and report on working progress using Azure DevOps Boards.","Utilise Git for version control to effectively manage code changes and collaboration.","Strong communication skills and demonstrable ability to manage upwards and articulate decision making and context.", "Working autonomously or independently in an Agile environment, to develop high standard web applications for the client.","Keen to foster an environment of best practice and standardisation underpinned by quality documentation."]
+  },
+  {
+    "id": 3,
+      "name": "YORKSHIRE WATER",
+      "link": "https://www.yorkshirewater.com/",
+    "role": "LEAD JAVASCRIPT SOFTWARE DEVELOPER",
+    "description": "",
+    "startDate": "05/22",
+    "endDate": "present",
+    "list": ["Developed responsive web applications with React, using component libraries such as MUI and custom design systems. "," Modular code, reusable components. "," Built software to high accessibility standards, WCAG 2.1 AA. "," API integration to RESTful APIs with Axios "," Jest unit testing, Selenium automated testing. "," Manage tasks and report on progress using Azure DevOps Boards. "," Git for version control to effectively manage code changes and collaboration. "," Strong communication skills and demonstrable ability to manage upwards and articulate decision making and context. "," Outstanding ability to interact and communicate with others, "," CI/CD with Azure DevOps Pipelines "," Keen to foster an environment of best practice and standardisation underpinned by quality documentation. "," Reading and understanding JSON schema for effective data handling"]
+  }
+]
