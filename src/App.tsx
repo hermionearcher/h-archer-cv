@@ -14,10 +14,10 @@ function App() {
       <Router>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="project" element={<Project />}>
+          {/* <Route path="project" element={<Project />}>
             <Route path=":id" element={<Project />} />
-          </Route>
-          <Route path="blog" element={<Blog />} />
+          </Route> */}
+          {/* <Route path="blog" element={<Blog />} /> */}
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

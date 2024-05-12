@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Contact from '../components/Contact';
-import ProjectSection from '../components/ProjectSection';
+import Card from '../components/Card';
+import jobs from "../data/experience.json";
 import '../assets/h-a-cv-22.pdf';
-// import ToggleSwitch from './ToggleSwitch';
+import '../assets/Hermione_Archer_React_Developer.pdf';
 
 const Home = () => {
   const [showMore, setShowMore] = useState(false);
@@ -18,7 +19,7 @@ const Home = () => {
         <div>
           <h1 id="user-name">Me...</h1>
           <p id="bio">
-            JavaScript Software Developer{' '}
+            Lead JavaScript Software Developer{' '}
             <a
               href="https://www.yorkshirewater.com/"
               target="_blank"
@@ -40,16 +41,15 @@ const Home = () => {
 
       <section className="section--page">
         <div id="socials--list">
-          {/* <a href="https://youtube.com/c/dennisivy" target="_blank">Youtube</a> */}
-          <a href="#my-work">My Projects</a>
+          {/* <a href="#my-work">My Projects</a> */}
           <a href="https://www.linkedin.com/in/h-archer/" target="_blank">
             Linkedin
           </a>
           <a href="https://github.com/hermionearcher" target="_blank">
             Github
           </a>
-          <a href="/blog">Blog Posts</a>
-          <a href={require('../assets/h-a-cv-22.pdf')} target="_blank">
+          {/* <a href="/blog">Blog Posts</a> */}
+          <a href={require('../assets/Hermione_Archer_React_Developer.pdf')} rel="noreferrer" target="_blank">
             Download my CV
           </a>
         </div>
@@ -90,105 +90,10 @@ const Home = () => {
       <section id="work-history-wrapper" className="section--page">
         <h2>Work History</h2>
 
-        <div className="line-break"></div>
-        <div className="card--work-history">
-          <strong>
-            🚧 JAVASCRIPT SOFTWARE DEVELOPER |{' '}
-            <a href="https://www.agora.io/en/" target="_blank" rel="noreferrer">
-              <span id="card--work--company">YORKSHIRE WATER</span>
-            </a>
-          </strong>
-          <p>05/2022 - Present</p>
-          <p>
-            Worked on application modernisation and migration to web based
-            solutions.
-          </p>
-          <ul>
-            <li>
-              Doubled Web SDK's monthly usage minutes from 15 million to 30
-              million minutes within my first 4 months
-            </li>
-            <li>
-              Produced educational video content which resulted in 300k+ views
-              on youtube
-            </li>
-            <li>
-              Produced SEO campaigns and content to gain market share for
-              related keywords.
-            </li>
-          </ul>
-        </div>
+        {jobs?.map((job: object, index: React.Key | null|undefined) => {return <Card job={ job } key={index}/>})}
 
         {showMore ? (
           <>
-            <div className="line-break"></div>
-            <div className="card--work-history">
-              <strong>
-                🚧 ANGULAR DEVELOPER |{' '}
-                <a
-                  href="https://www.agora.io/en/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span id="card--work--company">ATOS</span>
-                </a>
-              </strong>
-              <p>09/21 - 05/22</p>
-              <p>
-                Produced content showcasing new tech, tutorials & interviews
-                with top developers.
-              </p>
-              <ul>
-                <li>166,000+ Youtube Subscribers</li>
-                <li>30,000 course copies sold</li>
-                <li>12+ Million views on Youtube</li>
-                <li>
-                  Made regular contributions to Traversy Medias youtube channel
-                  (1.9m Subscribers)
-                </li>
-                <li>
-                  Tutorial videos included projects such as social networks,
-                  Ecommerce, real time video, stripe & paypal integrations and
-                  more{' '}
-                </li>
-              </ul>
-            </div>
-
-            <div className="line-break"></div>
-            <div className="card--work-history">
-              <strong>
-                🚧 POWERAPPS DEVELOPER |{' '}
-                <a
-                  href="https://www.agora.io/en/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span id="card--work--company">ATOS</span>
-                </a>
-              </strong>
-              <p>09/20 - 09/21</p>
-              <p>
-                Designed and developed a laboratory management system. My system
-                provided an interface for lab technicians and customers to view
-                and track data from samples tested in the lab.
-              </p>
-              <ul>
-                <li>
-                  Designed prototype & pitched original idea for new lab
-                  management system (LIMS)
-                </li>
-                <li>
-                  Built entire code base and brought version 1 of LIMS system to
-                  market as a solo developer
-                </li>
-                <li>
-                  Onboarded and trained customers (Webinars & Conferences)
-                </li>
-                <li>
-                  Managed a small team of developers in expansion of LIMS system
-                </li>
-              </ul>
-            </div>
             <div
               onClick={() => setShowMore(!showMore)}
               className="card--techstack show--more"
@@ -206,12 +111,8 @@ const Home = () => {
         )}
       </section>
 
-      <ProjectSection />
-
-      {/* Toggle Switch
-      <ToggleSwitch /> */}
-
-      <Contact />
+      {/* <ProjectSection /> */}
+      {/* <Contact /> */}
     </div>
   );
 };
