@@ -13,7 +13,7 @@ const Home = () => {
         <img
           id="profile-pic"
           alt="Profile"
-          src="https://github.com/hermionearcher/react-digital-cv/blob/main/digital-cv/assets/images/h-a-profile-picture.JPG?raw=true"
+          src="https://github.com/hermionearcher/h-archer-cv/blob/main/src/assets/ha-profile-image.jpeg?raw=true"
         />
 
         <div>
