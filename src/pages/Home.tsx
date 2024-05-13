@@ -5,7 +5,6 @@ import '../assets/h-a-cv-22.pdf';
 import '../assets/Hermione_Archer_React_Developer.pdf';
 
 const Home = () => {
-  const [showMore, setShowMore] = useState(false);
   return (
     <div id="container--main">
       <section id="wrapper--hero top" className="section--page">
@@ -87,9 +86,6 @@ const Home = () => {
 
         {[...jobs]?.reverse().map((job: object, index: React.Key | null|undefined) => {return <Card job={ job } key={index}/>})}
       </section>
-
-      {/* <ProjectSection /> */}
-      {/* <Contact /> */}
     </div>
   );
 };
