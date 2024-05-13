@@ -60,7 +60,15 @@ li {
   display: flex;
   align-items: center;
   gap: 4em;
+}
+.header--block {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  @media (max-width: 750px) {
+    flex-direction: column;
 
+  }
 }
 
 #bio,
