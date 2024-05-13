@@ -25,7 +25,7 @@ const Home = () => {
             >
               Yorkshire Water
             </a>
-            , previously a Goverment contractor as a Angular developer.
+            , previously a Government contractor as a Angular developer.
           </p>
           <p id="email">
             👉<a href="mailto:hermione-archer@hotmail.co.uk?subject=Wow%20Hermione!%20Your%20cv%20is%20amazing%20-%20need%20a%20job%3F" rel="noreferrer"> Let's talk</a>
