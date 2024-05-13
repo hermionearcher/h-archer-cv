@@ -69,13 +69,15 @@ a {
 }
 
 #user-name {
-  font-size: 48px;
+  font-size: 33px;
   line-height: 1em;
 }
 
 #profile-pic {
   width: 150px;
   height: 150px;
+  margin: auto; 
+  display: flex;
   object-fit: cover;
   border-radius: 50%;
 }

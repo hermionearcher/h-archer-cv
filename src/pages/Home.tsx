@@ -16,9 +16,9 @@ const Home = () => {
         />
 
         <div>
-          <h1 id="user-name">Me...</h1>
+          <h3 id="user-name">Hermione</h3>
           <p id="bio">
-            Lead JavaScript Software Developer{' '}
+            Lead JavaScript software developer{' '}
             <a
               href="https://www.yorkshirewater.com/"
               target="_blank"
@@ -26,11 +26,7 @@ const Home = () => {
             >
               Yorkshire Water
             </a>
-            , previously at{' '}
-            <a href="https://atos.net/en/" target="_blank" rel="noreferrer">
-              Atos
-            </a>{' '}
-            as a Angular developer.
+            , previously a Goverment contractor as a Angular developer.
           </p>
           <p id="email">
             👉<a href="mailto:hermione-archer@hotmail.co.uk?subject=Wow%20Hermione!%20Your%20cv%20is%20amazing%20-%20need%20a%20job%3F" rel="noreferrer"> Let's talk</a>
@@ -89,25 +85,7 @@ const Home = () => {
       <section id="work-history-wrapper" className="section--page">
         <h2>Work History</h2>
 
-        {jobs?.map((job: object, index: React.Key | null|undefined) => {return <Card job={ job } key={index}/>})}
-
-        {showMore ? (
-          <>
-            <div
-              onClick={() => setShowMore(!showMore)}
-              className="card--techstack show--more"
-            >
-              <span>Show Less...</span>
-            </div>
-          </>
-        ) : (
-          <div
-            onClick={() => setShowMore(!showMore)}
-            className="card--techstack show--more"
-          >
-            <span>Show More...</span>
-          </div>
-        )}
+        {[...jobs]?.reverse().map((job: object, index: React.Key | null|undefined) => {return <Card job={ job } key={index}/>})}
       </section>
 
       {/* <ProjectSection /> */}
