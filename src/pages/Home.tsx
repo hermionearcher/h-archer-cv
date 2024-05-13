@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Contact from '../components/Contact';
 import Card from '../components/Card';
 import jobs from "../data/experience.json";
 import '../assets/h-a-cv-22.pdf';
@@ -9,7 +8,7 @@ const Home = () => {
   const [showMore, setShowMore] = useState(false);
   return (
     <div id="container--main">
-      <section id="wrapper--hero" className="section--page">
+      <section id="wrapper--hero top" className="section--page">
         <img
           id="profile-pic"
           alt="Profile"
@@ -42,10 +41,10 @@ const Home = () => {
       <section className="section--page">
         <div id="socials--list">
           {/* <a href="#my-work">My Projects</a> */}
-          <a href="https://www.linkedin.com/in/h-archer/" target="_blank">
+          <a href="https://www.linkedin.com/in/h-archer/" target="_blank" rel="noreferrer">
             Linkedin
           </a>
-          <a href="https://github.com/hermionearcher" target="_blank">
+          <a href="https://github.com/hermionearcher" target="_blank" rel="noreferrer">
             Github
           </a>
           {/* <a href="/blog">Blog Posts</a> */}
