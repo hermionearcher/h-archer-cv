@@ -53,7 +53,7 @@ const Home = () => {
       <section className="section--page">
         <h2>Skills & Qualifications</h2>
         <ul id="qualifications--list">
-          <li>✔️ 1 Year industry experience as a developer </li>
+          <li>✔️ 2-3 Year industry experience as a developer </li>
           <li>✔️ Data and SQL Certification</li>
           <li>
             ✔️ 150 hours+ JavaScript Algorithms and Data Structures course
