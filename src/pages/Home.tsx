@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '../components/Card';
 import jobs from "../data/experience.json";
 import '../assets/h-a-cv-22.pdf';
