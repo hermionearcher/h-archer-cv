@@ -49,11 +49,10 @@ li {
 #container--main {
   max-width: 700px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .section--page {
-  padding-top: 1em;
   padding-bottom: 1em;
 }
 
@@ -61,6 +60,7 @@ li {
   display: flex;
   align-items: center;
   gap: 4em;
+
 }
 
 #bio,
@@ -214,7 +214,6 @@ textarea:focus {
 
 @media (max-width: 600px) {
   .section--page {
-    padding-top: 1em;
     padding-bottom: 1em;
   }
 
