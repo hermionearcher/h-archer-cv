@@ -7,7 +7,7 @@ import '../assets/Hermione_Archer_React_Developer.pdf';
 const Home = () => {
   return (
     <div id="container--main">
-      <section id="wrapper--hero top" className="section--page">
+      <section id="wrapper--hero top" className="section--page header--block">
         <img
           id="profile-pic"
           alt="Profile"
